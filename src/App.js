@@ -42,7 +42,7 @@ export default function App() {
       {/* Sidebar */}
       <aside className="w-64 bg-black shadow-xl p-4 hidden md:flex flex-col items-center">
         <img
-          src={<img src={`${process.env.PUBLIC_URL}/logo.png`}
+          src={<img src={"${process.env.PUBLIC_URL}/logo.png"}
           alt="logo"
           className="w-28 h-28 mb-4 rounded-full shadow"
         />
@@ -56,7 +56,7 @@ export default function App() {
 
         <div className="flex justify-center md:hidden p-4 bg-black shadow">
           <img
-          src={<img src={`${process.env.PUBLIC_URL}/logo.png`} 
+          src={<img src={"${process.env.PUBLIC_URL}/logo.png"} 
           alt="Logo" 
           className="w-20 h-20 rounded-full shadow"
           />
