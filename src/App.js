@@ -42,9 +42,8 @@ export default function App() {
       {/* Sidebar */}
       <aside className="w-64 bg-black shadow-xl p-4 hidden md:flex flex-col items-center">
         <img
-          src={<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
-}
-          alt="SIUE Logo"
+          src={<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo"}
+          alt="logo"
           className="w-28 h-28 mb-4 rounded-full shadow"
         />
         <h2 className="text-xl font-bold mb-4 text-red-600">Eddiebot</h2>
@@ -56,7 +55,11 @@ export default function App() {
       <main className="flex flex-col flex-1 h-full">
 
         <div className="flex justify-center md:hidden p-4 bg-black shadow">
-          <src={<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" className="w-20 h-20 rounded-full shadow" />
+          <img
+          src={<img src={`${process.env.PUBLIC_URL}/logo.png`} 
+          alt="Logo" 
+          className="w-20 h-20 rounded-full shadow"
+          />
         </div>
 
         {/* Messages */}
