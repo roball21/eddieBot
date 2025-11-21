@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './out.css';
-//import logo from './logo.png';
+
 
 export default function App() {
   const [messages, setMessages] = useState([
@@ -56,7 +56,7 @@ export default function App() {
       <main className="flex flex-col flex-1 h-full">
 
         <div className="flex justify-center md:hidden p-4 bg-black shadow">
-          <img src={logo} alt="SIUE Logo" className="w-20 h-20 rounded-full shadow" />
+          <src={<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" className="w-20 h-20 rounded-full shadow" />
         </div>
 
         {/* Messages */}
