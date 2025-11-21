@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './out.css';
-import logo from './logo.png';
+//import logo from './logo.png';
 
 export default function App() {
   const [messages, setMessages] = useState([
@@ -42,7 +42,8 @@ export default function App() {
       {/* Sidebar */}
       <aside className="w-64 bg-black shadow-xl p-4 hidden md:flex flex-col items-center">
         <img
-          src={logo}
+          src={<img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+}
           alt="SIUE Logo"
           className="w-28 h-28 mb-4 rounded-full shadow"
         />
