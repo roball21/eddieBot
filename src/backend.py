@@ -18,7 +18,7 @@ def ask_model():
     payload_json = json.dumps(payload)
 
     response = bedrock.invoke_model(
-        modelId = "",
+        modelId = "openai.gpt-oss-120b-1:0",
         contentType = "application/json",
         body = payload_json
     )

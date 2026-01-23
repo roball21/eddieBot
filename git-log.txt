@@ -1,0 +1,80 @@
+* commit 752c8e51cbcc2550fad59cebce15ad5b976573dd (HEAD -> main, origin/main, gh-pages)
+| Author: Group14 <roballa@siue.edu>
+| Date:   Thu Nov 20 23:27:05 2025 -0600
+| 
+|     Update App.js
+| 
+|  src/App.js | 4 ++--
+|  1 file changed, 2 insertions(+), 2 deletions(-)
+| 
+* commit e7cc95931578b67c9a4a9ece0e9214e06496566a
+| Author: Group14 <roballa@siue.edu>
+| Date:   Thu Nov 20 23:21:17 2025 -0600
+| 
+|     Move logo to public folder and update App.js
+| 
+|  src/App.js | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit 6ddd077a57c8155c288abe7b22687b4d0f2c2a7c
+| Author: Group14 <roballa@siue.edu>
+| Date:   Thu Nov 20 23:20:02 2025 -0600
+| 
+|     Move logo to public folder and update App.js
+| 
+|  src/App.js | 11 +++++++----
+|  1 file changed, 7 insertions(+), 4 deletions(-)
+| 
+* commit 737802574840e0d2fb10a39f2101e9cd0bbc13df
+| Author: Group14 <roballa@siue.edu>
+| Date:   Thu Nov 20 23:17:26 2025 -0600
+| 
+|     Move logo to public folder and update App.js
+| 
+|  src/App.js | 4 ++--
+|  1 file changed, 2 insertions(+), 2 deletions(-)
+| 
+* commit ede1b72786793d59a1c5d9a6e94ac17f596c6d80
+| Author: Group14 <roballa@siue.edu>
+| Date:   Thu Nov 20 23:14:47 2025 -0600
+| 
+|     Move logo to public folder and update App.js
+| 
+|  public/logo.png | Bin 0 -> 5047 bytes
+|  src/App.js      |   5 +++--
+|  2 files changed, 3 insertions(+), 2 deletions(-)
+| 
+* commit 9cf8aba3767626a30e965ba19c316a59eb761bf7
+| Author: Group14 <roballa@siue.edu>
+| Date:   Thu Nov 20 22:46:02 2025 -0600
+| 
+|     Front end: React and Tailwindcss
+| 
+|  .gitignore             |    23 +
+|  in.css                 |     1 +
+|  package-lock.json      | 17571 +++++++++++++++++++++++++++++++++++++++++++++
+|  package.json           |    44 +
+|  public/favicon.ico     |   Bin 0 -> 3870 bytes
+|  public/index.html      |    43 +
+|  public/logo192.png     |   Bin 0 -> 5347 bytes
+|  public/logo512.png     |   Bin 0 -> 9664 bytes
+|  public/manifest.json   |    25 +
+|  public/robots.txt      |     3 +
+|  src/App.js             |    98 +
+|  src/App.test.js        |     8 +
+|  src/index.css          |    13 +
+|  src/index.js           |    17 +
+|  src/logo.png           |   Bin 0 -> 5047 bytes
+|  src/out.css            |  1075 +++
+|  src/reportWebVitals.js |    13 +
+|  src/setupTests.js      |     5 +
+|  18 files changed, 18939 insertions(+)
+| 
+* commit a343d75742c283c151ca69f85970064cb8d1bd13
+  Author: Group14 <roballa@siue.edu>
+  Date:   Thu Nov 20 22:30:58 2025 -0600
+  
+      first commit
+  
+   README.md | 70 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   1 file changed, 70 insertions(+)
