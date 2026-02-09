@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export default function App() {
   const [messages, setMessages] = useState([
     { sender: "bot", text: "Hi! How can I help you today?" }
@@ -39,18 +38,18 @@ export default function App() {
 return (
   <div className="flex h-screen">
     {/* Sidebar */}
-    <div className="w-64 bg-gray-800 text-white p-4">
+    <div className="w-64 bg-linear-to-b from-red-800 to-black text-white p-4">
       <h1 className="text-xl font-bold mb-4">Eddiebot</h1>
-      <button className="w-full bg-blue-600 p-2 rounded">New Chat</button>
+      <button className="w-full bg-black p-2 rounded">New Chat</button>
     </div>
 
     {/* Chat Section */}
-    <div className="flex-1 flex flex-col">
+    <div className="flex-1 flex flex-col bg-linear-to-b from-gray-300 to-gray-500">
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4">
         {messages.map((m, i) => (
           <div key={i} className={m.sender === "user" ? "text-right" : "text-left"}>
-            <span className="inline-block p-2 rounded bg-gray-200 mb-2">
+            <span className="inline-block p-2 rounded bg-red-800 mb-2">
               {m.text}
             </span>
           </div>
@@ -59,14 +58,14 @@ return (
       </div>
 
       {/* Input */}
-      <div className="p-4 border-t flex gap-2">
+      <div className="p-4 bg-red-800 border-t flex gap-2">
         <input
           className="flex-1 border p-2 rounded"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
         />
-        <button onClick={sendMessage} className="bg-blue-600 text-white px-4 rounded">
+        <button onClick={sendMessage} className="bg-black text-white px-4 rounded">
           Send
         </button>
       </div>

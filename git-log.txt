@@ -1,4 +1,99 @@
-* commit 752c8e51cbcc2550fad59cebce15ad5b976573dd (HEAD -> main, origin/main, gh-pages)
+* commit 81bdf802418dd4608b8db711a80dd293b28e4198 (HEAD -> main, origin/main)
+| Author: Ryan Bender <152329584+bendery13@users.noreply.github.com>
+| Date:   Thu Feb 5 15:10:09 2026 -0600
+| 
+|     Backend Upload
+| 
+|  .../app/__pycache__/main.cpython-314.pyc          | Bin 0 -> 1005 bytes
+|  .../app/api/__pycache__/chat.cpython-314.pyc      | Bin 0 -> 2447 bytes
+|  .../app/api/__pycache__/fetch.cpython-314.pyc     | Bin 0 -> 992 bytes
+|  src/BackEndv2/app/api/chat.py                     |  45 +++++++
+|  src/BackEndv2/app/api/fetch.py                    |  16 +++
+|  src/BackEndv2/app/main.py                         |  24 ++++
+|  .../__pycache__/bedrock_llm.cpython-314.pyc       | Bin 0 -> 5314 bytes
+|  .../__pycache__/query_classifier.cpython-314.pyc  | Bin 0 -> 1923 bytes
+|  .../__pycache__/retrieval.cpython-314.pyc         | Bin 0 -> 1132 bytes
+|  .../services/__pycache__/sources.cpython-314.pyc  | Bin 0 -> 989 bytes
+|  .../__pycache__/web_fetcher.cpython-313.pyc       | Bin 0 -> 5699 bytes
+|  .../__pycache__/web_fetcher.cpython-314.pyc       | Bin 0 -> 6836 bytes
+|  src/BackEndv2/app/services/bedrock_llm.py         | 133 +++++++++++++++++++
+|  src/BackEndv2/app/services/query_classifier.py    |  17 +++
+|  src/BackEndv2/app/services/retrieval.py           |  23 ++++
+|  src/BackEndv2/app/services/sources.py             |  22 ++++
+|  src/BackEndv2/app/services/web_fetcher.py         | 138 ++++++++++++++++++++
+|  ...9d256f94b4095382582d52bb4f04ab5e3ecb01298.json |   1 +
+|  ...8a9dfb1fc74010dc3eb898c93080050773470e46e.json |   1 +
+|  ...197d4c73646e7904f3c17d3bfb52b6c06e9ecda08.json |   1 +
+|  ...6a0241696d3a8e155680f671c07c90a95b3b8cef0.json |   1 +
+|  ...e49912deaf9b33f8810a4d7986ca331b9f17ec075.json |   1 +
+|  ...1fd0e944e4c37d4469d10c0eb4a61c8e656ab2d68.json |   1 +
+|  ...53636fbcf509eb99558ebd398e06980f5a219bf35.json |   1 +
+|  ...81b13df64803fbd36b6c0899131058ea3cc69de72.json |   1 +
+|  ...1759d6965c3a9da3b22ee4627657c22fe338e24e4.json |   1 +
+|  src/BackEndv2/notes.txt                           |   2 +
+|  src/BackEndv2/requirements.txt                    |  75 +++++++++++
+|  src/BackEndv2/test_bedrock_call.py                |  36 +++++
+|  src/BackEndv2/test_scraper.py                     |   6 +
+|  30 files changed, 546 insertions(+)
+| 
+* commit 15c4cb9bf678330ab9cdf81b28458bfc9b9c28d7
+| Author: Frank Wember <127029813+FrankWember@users.noreply.github.com>
+| Date:   Tue Feb 3 14:32:00 2026 -0600
+| 
+|     Add Tailwind CSS support
+|     
+|     - Added @tailwindcss/postcss as a development dependency.
+|     - Created postcss.config.js to configure PostCSS with Tailwind CSS.
+|     - Updated index.css to import Tailwind CSS styles.
+| 
+|  package-lock.json | 569 +++++++++++++++++++++++++++++++++++++++++++++++++++-
+|  package.json      |   1 +
+|  postcss.config.js |   5 +
+|  src/index.css     |   2 +
+|  4 files changed, 574 insertions(+), 3 deletions(-)
+| 
+* commit 9e305d663eb6db61cccab9a19a9edfb082702564
+| Author: Frank Wember <127029813+FrankWember@users.noreply.github.com>
+| Date:   Tue Jan 27 14:28:50 2026 -0600
+| 
+|     Add environment configuration and update backend API
+|     
+|     - Introduced .env.example for AWS and server configuration.
+|     - Updated .gitignore to exclude .env files.
+|     - Created requirements.txt for project dependencies.
+|     - Enhanced backend.py to load environment variables and improve error handling in the chat API endpoint.
+| 
+|  .env.example     | 11 +++++++++
+|  .gitignore       |  1 +
+|  requirements.txt |  4 ++++
+|  src/backend.py   | 67 ++++++++++++++++++++++++++++++++++++------------------
+|  4 files changed, 61 insertions(+), 22 deletions(-)
+| 
+* commit ae9539bf3e1bace0cc0740b248d04ce67eb85577
+| Author: Group14 <roballa@siue.edu>
+| Date:   Fri Jan 23 16:11:14 2026 -0600
+| 
+|     Clean up repo and remove large dependency
+| 
+|  .gitignore        |   1 +
+|  git-log.txt       |  80 +++++++++++++++++++++++++
+|  package-lock.json | 164 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+|  package.json      |   5 ++
+|  src/App.js        |  91 +++++++++++------------------
+|  src/backend.py    |   4 +-
+|  6 files changed, 285 insertions(+), 60 deletions(-)
+| 
+* commit 728fc8690001984aec1edd53cdd7e84c4efba8f1
+| Author: Group14 <roballa@siue.edu>
+| Date:   Fri Jan 16 15:56:07 2026 -0600
+| 
+|     Created backend.py file
+| 
+|  src/backend.py |  31 +++++++++++++++++++++++++++++++
+|  src/logo.png   | Bin 5047 -> 0 bytes
+|  2 files changed, 31 insertions(+)
+| 
+* commit 752c8e51cbcc2550fad59cebce15ad5b976573dd (gh-pages)
 | Author: Group14 <roballa@siue.edu>
 | Date:   Thu Nov 20 23:27:05 2025 -0600
 | 
